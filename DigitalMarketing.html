@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Digital Marketing</h1>
+    </section>
+
+    <!------------Digital Marketing------------>
+
+    <section class="DigitalMarketing"> 
+      <div class="row">
+
+        <div class="DigitalMarketing-col">
+          <h1>Comprehensive Digital Marketing Services to Elevate Your Brand</h1>
+          <p>
+            Our digital marketing services are designed to help you grow your business, enhance online visibility, and connect with your audience effectively. We offer a wide range of services to meet your marketing goals:
+          </p>
+          <br />
+          <h3>SEO (Search Engine Optimization)</h3>
+          <p>
+            Improve your website's search engine ranking with our proven SEO strategies, driving more organic traffic to your site and increasing brand awareness.
+          </p>
+          <br />
+          <h3>PPC (Pay-Per-Click) Advertising</h3>
+          <p>
+            Maximize your ROI with targeted PPC campaigns that drive traffic, boost sales, and give you measurable results through platforms like Google Ads and Bing Ads.
+          </p>
+          <br />
+          <h3>Social Media Marketing</h3>
+          <p>
+            Engage with your audience on platforms like Facebook, Instagram, LinkedIn, and Twitter. Our social media experts create campaigns that foster brand loyalty and drive conversions.
+          </p>
+          <br />
+          <h3>Content Marketing</h3>
+          <p>
+            Build trust and authority by creating high-quality content that educates, entertains, and inspires your audience. We create content strategies that align with your brand values and customer needs.
+          </p>
+          <br />
+          <a href="services.html" class="hero-btn red-btn">ALL SERVICES</a>
+        </div>
+
+        <div class="DigitalMarketing-col">
+          <img src="images/digitalMarketing.jpg" alt="digitalMarketing" />
+        </div>
+
+      </div>
+    </section>
+
+    <!------------Case Studies------------>
+
+    <section class="CaseStudies">
+      <div class="row">
+        <!-- Case Study 1 -->
+        <div class="CaseStudy-col">
+          <img src="images/case-study-1.jpg" alt="Case Study 1" />
+          <h2>Case Study: SEO Success</h2>
+          <p>
+            We helped a client improve their website's search engine rankings by optimizing content, enhancing backlinks, and refining keyword strategy.
+          </p>
+        </div>
+    
+        <!-- Case Study 2 -->
+        <div class="CaseStudy-col">
+          <img src="images/case-study-2.jpg" alt="Case Study 2" />
+          <h2>Case Study: Social Media Marketing</h2>
+          <p>
+            Through targeted social media campaigns, we increased brand awareness and customer engagement for a leading e-commerce brand.
+          </p>
+        </div>
+    
+        <!-- Case Study 3 -->
+        <div class="CaseStudy-col">
+          <img src="images/case-study-3.jpg" alt="Case Study 3" />
+          <h2>Case Study: Content Strategy</h2>
+          <p>
+            Our content marketing efforts helped a tech startup build a strong online presence by providing valuable insights through blogs and articles.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!------------Footer------------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        At Xtraders, we are committed to providing top-notch training in digital marketing, 
+        e-commerce solutions, and Amazon services. 
+      </p>
+
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+
+      <p>Made with <i class="fa-regular fa-heart"></i></i> by Xtrainers</p>
+    </section>
+
+    <!------------ JavaScript Code for Toggle Menu ---------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0"; // shows the menu
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px"; // hides the menu
+      }
+    </script>
+  </body>
+</html>

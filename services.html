@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Our Services</h1>
+    </section>
+
+    <!------------Services------------>
+
+    <section class="services">
+      <h1>Services We Offer</h1>
+      <p>
+        Our training institute offers expert-led courses to help you excel in
+        your career. Gain practical skills and knowledge for lasting success.
+      </p>
+
+      <div class="row">
+          <div class="services-col" data-link="TrainingCourses.html">
+            <h3><i class="fa-solid fa-graduation-cap"></i> Training Courses</h3>
+            <p>
+              Enroll in our comprehensive training courses designed to equip you
+              with the skills and knowledge needed to thrive in your chosen field.
+            </p>
+          </div>
+
+          <div class="services-col" data-link="DigitalMarketing.html">
+            <h3><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
+            <p>
+              Master the art of digital marketing with our targeted programs that
+              cover SEO, content marketing, social media strategies, and more.
+            </p>
+          </div>
+
+          <div class="services-col" data-link="ECommerce.html">
+            <h3><i class="fas fa-shopping-cart"></i> E-Commerce Solutions</h3>
+            <p>
+              Learn to create and manage successful e-commerce platforms, from
+              product listing and payment integration to customer engagement.
+            </p>
+          </div>
+
+          <div class="services-col" data-link="AmazonRelated.html">
+            <h3><i class="fas fa-box"></i> Amazon Services</h3>
+            <p>
+              Discover how to grow your Amazon business with our expert guidance
+              on product research, listing optimization, and account management.
+            </p>
+          </div>
+      </div>
+
+    </section>
+
+
+    <!------------Footer------------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        At Xtraders, we are committed to providing top-notch training in digital marketing, 
+        e-commerce solutions, and Amazon services. 
+      </p>
+
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+
+      <p>Made with <i class="fa-regular fa-heart"></i></i> by Xtrainers</p>
+    </section>
+
+    <!------------ JavaScript Code ---------->
+    <script>
+      //code for menu toggle
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0"; // shows the menu
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px"; // hides the menu
+      }
+      
+      //code to make services redirect
+      document.querySelectorAll('.services-col').forEach(div => {
+      div.addEventListener('click', () => {
+        window.location.href = div.getAttribute('data-link');
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>ECommerce Solutions</h1> 
+    </section>
+
+    <!------------Website Development------------>
+
+    <section class="DigitalMarketing"> 
+      <div class="row">
+
+        <div class="DigitalMarketing-col">
+          <h1>Master Website Development with Our Expert-Led Courses</h1>
+          <p>
+              Dive into the world of website development with courses that cover everything from foundational skills to advanced techniques. 
+              Our programs are structured to give you hands-on experience, with projects that mirror real-world challenges and prepare you for 
+              the demands of the industry. Join us and start building the skills needed to create professional, dynamic websites.
+          </p>
+          <br />
+          <p>
+              Whether you’re a beginner or looking to advance your skills, our flexible online and in-person courses let you learn at your own pace. 
+              With guidance from seasoned developers, you’ll gain not only technical expertise but also the practical know-how to bring your ideas to life. 
+              Our comprehensive curriculum ensures you’ll be well-equipped to stand out in the competitive web development field.
+          </p>
+          <br />
+          <a href="services.html" class="hero-btn red-btn">ALL SERVICES</a>
+        </div>
+        <div class="DigitalMarketing-col">
+          <img src="images/webdevelopment.png" alt="webdevelopment" />
+        </div>
+
+      </div>
+    </section>
+
+    <!------------Product Listing------------>
+
+    <section class="DigitalMarketing"> 
+      <div class="row">
+
+        <div class="DigitalMarketing-col">
+          <img src="images/productlisting.png" alt="productlisting" />
+        </div>
+
+        <div class="DigitalMarketing-col">
+          <h1>Learn Effective Product Listing Strategies with Our Courses</h1>
+          <p>
+              Elevate your skills in product listing and management with courses designed to help you create impactful listings that drive sales. 
+              Our comprehensive training covers everything from crafting persuasive descriptions to optimizing listings for search engines, 
+              ensuring your products stand out in competitive markets.
+          </p>
+          <br />
+          <p>
+              With flexible learning options available online and in-person, our courses cater to both beginners and experienced sellers. 
+              Learn at your own pace with guidance from industry experts who bring years of e-commerce experience. 
+              Gain the skills and confidence needed to create high-converting product listings and effectively manage your inventory.
+          </p>
+          <br />
+          <a href="services.html" class="hero-btn red-btn">ALL SERVICES</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-----------Online Store Management------------>
+
+    <section class="DigitalMarketing"> 
+      <div class="row">
+
+        <div class="DigitalMarketing-col">
+          <h1>Proper Online Store Management with Our Specialized Courses</h1>
+          <p>
+              Develop the expertise to run a successful online store with our in-depth courses on store management. 
+              From setting up and customizing your storefront to managing inventory, orders, and customer service, 
+              our courses provide the essential skills needed to build and grow a thriving e-commerce business.
+          </p>
+          <br />
+          <p>
+              Choose flexible online or in-person options to learn at your own pace. Our seasoned instructors, with years of industry experience, 
+              will guide you through each step, helping you navigate the complexities of online retail. Gain practical insights and confidence to 
+              optimize store operations, enhance customer experience, and drive sales in today’s competitive digital marketplace.
+          </p>
+          <br />
+          <a href="services.html" class="hero-btn red-btn">ALL SERVICES</a>
+        </div>
+        <div class="DigitalMarketing-col">
+          <img src="images/storemangement.png" alt="TrainingCourses" />
+        </div>
+
+      </div>
+    </section>
+
+    <!------------Payment integration------------>
+
+    <section class="DigitalMarketing"> 
+      <div class="row">
+
+        <div class="DigitalMarketing-col">
+          <img src="images/payment.png" alt="paymment" />
+        </div>
+
+        <div class="DigitalMarketing-col">
+          <h1>Payment Integration and Inventory Management</h1>
+          <p>
+            Enhance your e-commerce expertise with our comprehensive courses on payment integration and inventory management. 
+            Discover how to implement secure payment gateways and optimize transaction flows for a smooth and reliable checkout experience. 
+          </p>
+          <br />
+          <p>
+            Our training ensures you’re equipped with the knowledge to build customer trust and streamline payment processes.
+          </p>
+          <a href="services.html" class="hero-btn red-btn">ALL SERVICES</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!------------Footer------------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        At Xtraders, we are committed to providing top-notch training in digital marketing, 
+        e-commerce solutions, and Amazon services. 
+      </p>
+
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+
+      <p>Made with <i class="fa-regular fa-heart"></i></i> by Xtrainers</p>
+    </section>
+
+    <!------------ JavaScript Code for Toggle Menu ---------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0"; // shows the menu
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px"; // hides the menu
+      }
+    </script>
+  </body>
+</html>
